@@ -1,8 +1,8 @@
 public class CalcPi {
 	public static void main(String [] args) {
-		String[] time = args[0].split(":"); // get time 
-		String minutesToAdd = args[1]; // get minutes to add
-		int Toadd = Integer.parseInt(minutesToAdd);
+		String[] parts = args[0].split(", ");
+		String[] time = parts[0].split(":"); // get time  
+		int Toadd = Integer.parseInt(parts[1]); // get minutes to add
 		int hours = Integer.parseInt(time[0]);
 		int minutes = Integer.parseInt(time[1]);
 
