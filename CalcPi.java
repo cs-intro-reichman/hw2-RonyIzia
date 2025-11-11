@@ -8,7 +8,7 @@ public class CalcPi {
 
 		int totalMinutes = hours * 60 + minutes + Toadd; // calculate total minutes
 		int newHours = (totalMinutes / 60) % 24; // calculate new hours
-		int newMinutes = totalMinutes - ((totalMinutes / 60) * 60); // calculate new minutes
+		int newMinutes = totalMinutes % 60; // calculate new minutes
 		
 		if (newMinutes < 10 ) { 
 			
