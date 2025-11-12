@@ -1,29 +1,18 @@
 public class CalcPi {
 	public static void main(String [] args) {
-		String[] parts = args[0].split(", ");
-		String[] time = parts[0].split(":"); // get time  
-		int Toadd = Integer.parseInt(parts[1]); // get minutes to add
-		int hours = Integer.parseInt(time[0]);
-		int minutes = Integer.parseInt(time[1]);
-
-		int totalMinutes = hours * 60 + minutes + Toadd; // calculate total minutes
-		int newHours = (totalMinutes / 60) % 24; // calculate new hours
-		int newMinutes = totalMinutes % 60; // calculate new minutes
+    String howManyTerms = args[0]; // get number of terms
+	int terms = Integer.parseInt(howManyTerms);
+	int denominator = 1; 
+	int sign = 1;
+	double pi = Math.PI;
+	double sum = 0.0;	
+	for (int i = 0; i < terms; i++) {
+		sum += sign * (1.0 / denominator);
+		sign *= -1;
+		denominator +=2 ;
 		
-		if (newMinutes < 10 ) { 
-			
-			if(newHours < 10) {
-				System.out.print("0" + newHours + ":0" + newMinutes);
-			}else {
-				System.out.print(newHours + ":0" + newMinutes);
-			}
-		    }else {
-		    	if(newHours < 10) {
-					System.out.print("0" + newHours + ":" + newMinutes);
-				}else {
-					System.out.print(newHours + ":" + newMinutes);
-				}
-		    }
-
 	}
+	System.out.println("pi according to java: " + pi);
+	System.out.println("pi, approximated:     " + sum * 4 );
+  }
 } 
