@@ -13,9 +13,9 @@ public class Cheers {
                 char letter = phrase.charAt(i); // get each letter
                  if(letter == 'A' || letter == 'E' || letter == 'F' || letter == 'H' || letter == 'I' || // determine if letter needs "an" or "a"
                    letter == 'L' || letter == 'M' || letter == 'N' || letter == 'O' || letter == 'R' || letter == 'S' || letter == 'X') {
-                    System.out.println("Give me an " + letter +  ':' + letter + "!");
+                    System.out.println("Give me an " + letter +  ": "  + letter + "!");
                 }else {
-                        System.out.println("Give me a " + letter +  ':' + letter + "!");
+                        System.out.println("Give me a " + letter +  ": "  + letter + "!");
                       }   
          }
                        
