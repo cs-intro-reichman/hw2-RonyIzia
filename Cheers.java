@@ -21,7 +21,7 @@ public class Cheers {
                        
                        System.out.println("What does that spell?");
                        for(int j = 0; j < times; j++) { // repeat cheering phrase
-                        System.out.println(phrase + "! ! !");
+                        System.out.println(phrase + "!!!");
                        }
         }
  }
