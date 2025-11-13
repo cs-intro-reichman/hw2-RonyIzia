@@ -6,7 +6,7 @@ public class Collatz {
 		int seed = 1; // starting seed to count until number
 		
 		for(seed = 1; seed <= number; seed++) { // loop from 1 to number
-			int counter = 0; 
+			int counter = 1; 
 		    System.out.println(); // new line for each seed
 			System.out.print(seed + " "); // print starting seed
 			int currentNumero = seed; // current number in the sequence
